@@ -31,10 +31,17 @@ const CountDown = () => {
   return (
     <>
       <TableContainer component="paper" sx={{}}>
-        <Table sx={{mt:'50px'}}>
-          <TableHead component='h1' sx={{textAlign:'center', }}>Offer Ends in </TableHead>
+        <Table sx={{mt:'50px', 
+        backgroundImage:"url("+"/images/closing-down-sale-special-offer-price-sign-vector-34136940.jpeg"+")",
+        backgroundPosition: 'center',
+        // backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat', 
+        height:'600px'
+        }}>
+          {/* <TableHead component='h1' sx={{textAlign:'', }}>Offer Ends in </TableHead> */}
           <TableBody >
-            <TableRow sx={{display:'flex', ml:'520px',}}>
+          <TableRow sx={{display:'flex', ml:'580px', mt:'350px' }}><TableCell sx={{fontSize:'29px', color:'#fff'}}>Offer Ends in </TableCell></TableRow>
+            <TableRow sx={{display:'flex', ml:'580px', }}>
               <TableCell align="center" component="th" sx={{backgroundColor:'#000', color:'#fff', fontSize:'20px'}}>
                 {remaingDays}
                 <br /> Days
