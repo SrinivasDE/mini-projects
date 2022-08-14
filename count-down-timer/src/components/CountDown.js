@@ -21,8 +21,8 @@ const CountDown = () => {
 
   const remaingDays = Math.floor(middleTime / days);
   const remaingHours = Math.floor((middleTime % days) / hours);
-  const remaingMinutes = Math.floor((middleTime % days) / minutes);
-  const remaingSeconds = Math.floor((middleTime % days) / seconds);
+  const remaingMinutes = Math.floor((middleTime % hours) / minutes);
+  const remaingSeconds = Math.floor((middleTime % minutes) / seconds);
 
   useEffect(() => {
     setTimeout(() => setCurrentTime(new Date().getTime()), 1000);
